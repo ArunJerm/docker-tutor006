@@ -1,0 +1,9 @@
+FROM debian:jessie
+
+ENV text="Hellow World from ENV"
+
+LABEL "test"="value"
+RUN echo ${text}
+
+CMD ["echo", "hello world01"]
+
